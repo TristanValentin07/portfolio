@@ -1,265 +1,295 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Tristan Valentin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    .section-title {
+      text-align: center;
+      margin: 40px 0 20px;
+      font-weight: 700;
+    }
+    .line-dec {
+      width: 50px;
+      height: 4px;
+      background-color: #007bff;
+      margin: 10px auto 20px;
+    }
+    .service-item, .experience-item {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .service-item:hover, .experience-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    .service-item img, .experience-item img {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+      margin-right: 15px;
+    }
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #0800ff;
+      color: white;
+    }
+    .footer a {
+      color: white;
+      text-decoration: none;
+    }
+    .profile-picture {
+      width: 100%;
+      max-width: 150px;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      margin-bottom: 20px;
+    }
 
-    <title>Portfolio Tristan Valentin</title>
+    .hero {
+      background-color: #0800ff;
+      color: white;
+      padding: 40px 20px;
+    }
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    .profile-container {
+      flex-shrink: 0;
+      margin-right: -150px;
+    }
 
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css" />
-    <link rel="stylesheet" href="assets/css/templatemo-style.css" />
-    <link rel="stylesheet" href="assets/css/owl.css" />
-    <link rel="stylesheet" href="assets/css/lightbox.css" />
-  </head>
+    .profile-picture {
+      width: 120px;
+      max-width: 120px;
+      border-radius: 30%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
 
-  <body>
-    <div id="page-wraper">
-      <!-- Sidebar Menu -->
-      <div class="responsive-nav">
-        <i class="fa fa-bars" id="menu-toggle"></i>
-        <div id="menu" class="menu">
-          <i class="fa fa-times" id="menu-close"></i>
-          <div class="container">
-            <div class="image">
-              <a href="#"><img src="assets/images/author-image.jpg" alt="" /></a>
-            </div>
-            <div class="author-content">
-              <h4>Tristan Valentin</h4>
-              <span>Etudiant à Epitech Paris</span>
-            </div>
-            <nav class="main-nav" role="navigation">
-              <ul class="main-menu">
-                <li><a href="#section1">A propos de moi</a></li>
-                <li><a href="#section2">Mes compétences</a></li>
-                <li><a href="#section3">Mes projets</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
+    .hero-content {
+      flex-grow: 1;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="hero">
+    <div class="container d-flex align-items-center">
+      <div class="profile-container">
+        <img src="assets/images/author-image.JPEG" alt="Photo de Tristan Valentin" class="profile-picture">
       </div>
+      <div class="hero-content text-center mx-auto">
+        <h1>Tristan Valentin</h1>
+        <p>Étudiant en 3ème année à l'ESGI Paris</p>
+        <p>Recherche contrat d’apprentissage dès Janvier 2025</p>
+        <a href="mailto:tristan.valentin2002@gmail.com" class="btn btn-light">Me Contacter</a>
+      </div>
+    </div>
+  </div>
+  
 
-      <section class="section about-me" data-section="section1">
-        <div class="container">
-          <div class="section-heading">
-            <h2>A propos de moi</h2>
-            <div class="line-dec"></div>
-            <span
-              > Voici mon Portfolio dans lequel seront recensé mes competences ainsi que certains projets effectués.</span
-            >
-          </div>
-          <div class="single-image-post">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="center-image">
-                  <img class="centered-image" src="assets/images/left-image.png" alt="" style="display: block; margin: 0 auto; max-width: 50%; max-height: 100%;">
-                </div>
-              </div>
-            </div>
-          </div>          
-                                       
-        </div>
-      </section>
-      <section class="section my-services" data-section="section2">
-        <div class="container">
-          <div class="section-heading">
-            <h2>Mes compétences</h2>
-            <div class="line-dec"></div>
-            <span
-              >Après une année à Epitech j'ai pu acquérir de nombreuses compétences, les voici listées ci dessous :</span>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="service-item">
-                <div class="first-service-icon service-icon"></div>
-                <h4>Langage C</h4>
-                <p>
-                  Ce langage est celui que j'ai le plus utilisé. Sa maitrise était nécessaire pour la plupart des projets. 
-                  Vous pouvez retrouver sur mon Github plusieurs exemples de projets.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-item">
-                <div class="second-service-icon service-icon"></div>
-                <h4>Python et autres</h4>
-                <p>
-                  Certains des projets que j'ai pu effectuer utilisent d'autres langages que le C tel que le Python, le HTML ou encore le Dart avec Flutter (mobile)
-                </p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-item">
-                <div class="third-service-icon service-icon"></div>
-                <h4>Bash</h4>
-                <p>
-                  Mes projets sont effectués sous Fedora (Linux), ce qui fait que j'utilise le bash depuis maintenant plus d'un an. Je peux être autonome sur un environnement Linux.
-                </p>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="service-item">
-                <div class="fourth-service-icon service-icon"></div>
-                <h4>Github</h4>
-                <p> L'usage de Github est aujourd'hui indispensable. J'en maitrise les aspects princpipaux tel que les branches et les commits.
-                </p>
-              </div>
+  <!-- Compétences -->
+  <section>
+    <h2 class="section-title">Compétences</h2>
+    <div class="line-dec"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="service-item d-flex align-items-center">
+            <img src="assets/images/c.png" alt="C">
+            <div>
+              <h4>Langage C</h4>
+              <p>Langage principal utilisé dans mes projets académiques.</p>
             </div>
           </div>
         </div>
-      </section>
-
-      <section class="section my-work" data-section="section3">
-        <div class="container">
-          <div class="section-heading">
-            <h2>Mes projets</h2>
-            <div class="line-dec"></div>
-            <span
-              >Voici quelques projets que j'ai pu réaliser, vous pouvez les retrouver directement sur mon github :</span
-            >
-          </div>
-          <div class="row">
-            <div class="isotope-wrapper">
-              <form class="isotope-toolbar">
-                <label
-                  ><input
-                    type="radio"
-                    data-type="*"
-                    checked=""
-                    name="isotope-filter"
-                  />
-                  <span>Tout</span></label
-                >
-                <label
-                  ><input
-                    type="radio"
-                    data-type="algo"
-                    name="isotope-filter"
-                  />
-                  <span>Algo</span></label
-                >
-                <label
-                  ><input
-                    type="radio"
-                    data-type="graphique"
-                    name="isotope-filter"
-                  />
-                  <span>Graphique</span></label
-                >
-              </form>
-              <div class="isotope-box">
-                <div class="isotope-item" data-type="algo">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/map-bsq.png"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/map-bsq.png"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                      ></a>
-                      <h4>BSQ</h4>
-                      <span>Ce projet est en C. Il a pour but de retrouver l'espace le plus grand dans une map 2D constituée de points et de "o". 
-                      </span>
-                    </figcaption>
-                  </figure>
-                </div>
-
-                <div class="isotope-item" data-type="algo">
-                  <figure class="snip1321">
-                    <img
-                      src="assets/images/printf.png"
-                      alt="sq-sample26"
-                    />
-                    <figcaption>
-                      <a
-                        href="assets/images/printf.png"
-                        data-lightbox="image-1"
-                        data-title="Caption"
-                      ></a>
-                      <h4>Printf</h4>
-                      <span>Dans ce projet de 2 semaines j'ai pu recoder la fonction printf de la libc.</span>
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
+        <div class="col-md-4">
+          <div class="service-item d-flex align-items-center">
+            <img src="assets/images/python.png" alt="Python">
+            <div>
+              <h4>Python</h4>
+              <p>Développement backend et automatisation.</p>
             </div>
           </div>
         </div>
-      </section>
+        <div class="col-md-4">
+          <div class="service-item d-flex align-items-center">
+            <img src="assets/images/django.png" alt="Django">
+            <div>
+              <h4>Django</h4>
+              <p>Création de boutiques e-commerce et backends robustes.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-item d-flex align-items-center">
+            <img src="assets/images/cpp.png" alt="Cpp">
+            <div>
+              <h4>C++</h4>
+              <p>Développement de divers projets académiques disponible sur mon Github</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-item d-flex align-items-center">
+            <img src="assets/images/shell.png" alt="Bash">
+            <div>
+              <h4>Bash</h4>
+              <p>Création de scripts d'automatisation et utilisaton en TTY</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-item d-flex align-items-center">
+            <img src="assets/images/html.png" alt="HTML">
+            <div>
+              <h4>HTML</h4>
+              <p>Utilisation dans tous les projets Web que j'ai pu réaliser.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-item d-flex align-items-center">
+            <img src="assets/images/css.png" alt="CSS">
+            <div>
+              <h4>CSS</h4>
+              <p>Utilisation pour la partie FrontEnd de mes projets</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-item d-flex align-items-center">
+            <img src="assets/images/docker.png" alt="Docker">
+            <div>
+              <h4>Docker</h4>
+              <p>Utilisation de Docker dans mes projets personnels.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-item d-flex align-items-center">
+            <img src="assets/images/svelte.png" alt="Svelte">
+            <div>
+              <h4>Svelte</h4>
+              <p>Grande utilisation chez Teale lors de mon stage de 6 mois.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-item d-flex align-items-center">
+            <img src="assets/images/js.png" alt="JavaScript">
+            <div>
+              <h4>JavaScript</h4>
+              <p>Développement en JS avec le framework Svelte chez Teale.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-item d-flex align-items-center">
+            <img src="assets/images/haskell.png" alt="Haskell">
+            <div>
+              <h4>Haskell</h4>
+              <p>Utilisation de Haskell lors de certains de mes projets à Epitech.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service-item d-flex align-items-center">
+            <img src="assets/images/asm.png" alt="Asm">
+            <div>
+              <h4>Assembleur</h4>
+              <p>Projet consistant a recoder la LibC en Assembleur.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Ajoutez plus de compétences ici -->
+      </div>
+    </div>
+  </section>
 
-    <!-- Scripts -->
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Expérience -->
+  <section>
+    <h2 class="section-title">Expériences Professionnelles</h2>
+    <div class="line-dec"></div>
+    <div class="container">
+      <div class="experience-item">
+        <h4>Freelance - Grafen_it (10 mois, 2024)</h4>
+        <ul>
+          <li>Création d’une boutique e-commerce avec Django.</li>
+          <li>Implémentation CSS avec Django-Tailwind.</li>
+          <li>Configuration de la page de paiement avec Stripe.</li>
+        </ul>
+      </div>
+      <div class="experience-item">
+        <h4>Teale - Stagiaire Développeur (6 mois, 2023)</h4>
+        <ul>
+          <li>Tests fonctionnels de l’application mobile.</li>
+          <li>Création de la page profil utilisateur sur le site web.</li>
+          <li>Implémentation d’une page d’invitation client sur le backoffice.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-    <script src="assets/js/isotope.min.js"></script>
-    <script src="assets/js/owl-carousel.js"></script>
-    <script src="assets/js/lightbox.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <script>
-      //according to loftblog tut
-      $(".main-menu li:first").addClass("active");
+  <!-- Formation -->
+  <section>
+    <h2 class="section-title">Formation</h2>
+    <div class="line-dec"></div>
+    <div class="container">
+      <ul>
+        <li><strong>ESGI Paris</strong> - Expert en Ingénierie Informatique (Actuellement)</li>
+        <li><strong>Epitech Paris</strong> - Expert en technologie de l’information (2024)</li>
+        <li><strong>Lycée Bossuet Meaux</strong> - Bac Général Scientifique (Physique + SVT, 2021)</li>
+      </ul>
+    </div>
+  </section>
 
-      var showSection = function showSection(section, isAnimate) {
-        var direction = section.replace(/#/, ""),
-          reqSection = $(".section").filter(
-            '[data-section="' + direction + '"]'
-          ),
-          reqSectionPos = reqSection.offset().top - 0;
+  <br>
+  <!-- Centres d'intérêts -->
+  <section>
+    <h2 class="section-title">Centres d'intérêts</h2>
+    <div class="line-dec"></div>
+    <div class="container">
+      <li>Ski</li>
+      <li>Golf</li>
+      <li>Natation</li>
+      <li>Voyages</li>
+      <br>
+      <br>
+    </div>
+  </section>
 
-        if (isAnimate) {
-          $("body, html").animate(
-            {
-              scrollTop: reqSectionPos
-            },
-            800
-          );
-        } else {
-          $("body, html").scrollTop(reqSectionPos);
-        }
-      };
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2024 Tristan Valentin</p>
+    <p>
+      <a href="mailto:tristan.valentin2002@gmail.com">tristan.valentin2002@gmail.com</a> |
+      <a href="https://github.com/TristanValentin07" target="_blank">GitHub</a>
+    </p>
+  </footer>
 
-      var checkSection = function checkSection() {
-        $(".section").each(function() {
-          var $this = $(this),
-            topEdge = $this.offset().top - 80,
-            bottomEdge = topEdge + $this.height(),
-            wScroll = $(window).scrollTop();
-          if (topEdge < wScroll && bottomEdge > wScroll) {
-            var currentId = $this.data("section"),
-              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
-            reqLink
-              .closest("li")
-              .addClass("active")
-              .siblings()
-              .removeClass("active");
-          }
-        });
-      };
-
-      $(".main-menu").on("click", "a", function(e) {
-        e.preventDefault();
-        showSection($(this).attr("href"), true);
-      });
-
-      $(window).scroll(function() {
-        checkSection();
-      });
-    </script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
